@@ -1,0 +1,133 @@
+2014/04/05 05:34:29 [error] [exception.CDbException] exception 'CDbException' with message 'Table "alumno" does not have a column named "nombre".' in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\xampp\htdocs\yii\sagpp\protected\components\UserIdentity.php(33): CActiveRecord->findByAttributes(Array)
+#2 C:\xampp\htdocs\yii\sagpp\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\yii\sagpp\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\sagpp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/sagpp/index.php?r=site/login
+HTTP_REFERER=http://localhost/yii/sagpp/index.php?r=site/login
+---
+2014/04/05 05:34:47 [error] [php] include(Alumnos.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii\sagpp\protected\components\UserIdentity.php(33): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\sagpp\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\xampp\htdocs\yii\sagpp\protected\controllers\SiteController.php(94): LoginForm->validate()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\yii\sagpp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/sagpp/index.php?r=site/login
+in C:\xampp\htdocs\yii\sagpp\protected\components\UserIdentity.php (33)
+in C:\xampp\htdocs\yii\sagpp\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\yii\sagpp\protected\controllers\SiteController.php (94)
+2014/04/05 05:35:34 [error] [exception.CDbException] exception 'CDbException' with message 'Table "alumno" does not have a column named "nombre".' in C:\xampp\htdocs\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\xampp\htdocs\yii\sagpp\protected\components\UserIdentity.php(33): CActiveRecord->findByAttributes(Array)
+#2 C:\xampp\htdocs\yii\sagpp\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\yii\sagpp\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\sagpp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/sagpp/index.php?r=site/login
+HTTP_REFERER=http://localhost/yii/sagpp/index.php?r=site/login
+---
+2014/04/05 05:36:12 [error] [exception.CException] exception 'CException' with message 'Property "Alumno.carrera" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('carrera')
+#1 C:\xampp\htdocs\yii\sagpp\protected\components\UserIdentity.php(47): CActiveRecord->__get('carrera')
+#2 C:\xampp\htdocs\yii\sagpp\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\yii\sagpp\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\sagpp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/sagpp/index.php?r=site/login
+HTTP_REFERER=http://localhost/yii/sagpp/index.php?r=site/login
+---
+2014/04/05 05:39:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Alumnos/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Alumnos/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\sagpp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sagpp/index.php?r=Alumnos/index
+HTTP_REFERER=http://localhost/yii/sagpp/index.php
+---
+2014/04/05 05:39:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Alumnos/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Alumnos/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\sagpp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sagpp/index.php?r=Alumnos/index
+---
+2014/04/05 05:39:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Alumnos/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Alumnos/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\sagpp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sagpp/index.php?r=Alumnos/index
+---
+2014/04/05 05:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Alumnos/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Alumnos/index')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\sagpp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/sagpp/index.php?r=Alumnos/index
+---
+2014/04/05 05:41:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('alumno/admin')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\sagpp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/sagpp/index.php?r=alumno/admin
+HTTP_REFERER=http://localhost/yii/sagpp/index.php?r=alumno/create
+---
